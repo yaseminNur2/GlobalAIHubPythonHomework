@@ -1,0 +1,31 @@
+#HANGMAN GAME
+
+print('HELLO!')
+name = input("PLEASE ENTER YOUR NAME").upper()
+print(f"WELCOME TO THE GAME, {name}!")
+print('YOU WILL WIN IF YOU GUESS THE WORD CORRECTLY. YOU HAVE 3 RIGHTS.')
+print("GOOD LUCK! :) ")
+
+rights = 3
+findword = 'color'
+prediction = ''
+
+while rights > 0:
+    letter = 0
+    for character in findword:
+        if char in prediction:
+            print(character)
+        else:
+            print('!')
+            letter = letter + 1
+    if letter == 0:
+        print("CONGARUTULATIONS! YOU WON!")
+
+    enterletter = input('ENTER LETTER.')
+    prediction = prediction + enterletter
+    if enterletter not in findword:
+        print("INCORRECT!")
+        rights = rights - 1
+        print(f'REMAINING RIGHT: {rights}')
+        if rights == 0:
+            print('GAME OVER! YOU LOST!')
