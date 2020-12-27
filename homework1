@@ -1,0 +1,15 @@
+#HOMEWORK 1
+
+print('Please enter five values.')
+
+value1 = input('Enter the first value.')
+value2 = input('Enter second value.')
+value3 = input('Enter third value.')
+value4 = input('Enter fourth value')
+value5 = input('Enter fifth value.')
+
+print(type("Type of the first value is {}." .format(value1)))
+print(type("Type pf second value is {}." .format(value2))
+print(type("Type pf third value is {}." .format(value3)))
+print(type(f'Type of fourth value is {value4}.'))
+print(type(f'Type of fifth value is {value5}.'))
