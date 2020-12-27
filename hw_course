@@ -1,0 +1,48 @@
+#STUDENT MANAGEMENT SYSTEM
+
+fname = input("Enter your first name: ")
+lname = input("Enter your last name: ")
+i = 1
+if (fname == fname and lname == lname):
+    print("Hello " + fname + " " + lname)
+elif (fname == fname or lname == lname):
+    i+=1
+    if i==3:
+        print("Please try again later.")
+
+lessons = ['Differantial Equations','Electric Circuit Design','Programming Techniques','Calculus1','Data Structures']
+lessonsnum = len(lessons)
+print(lessons)
+print('You can take minimum of 3 and maximum of 5.')
+print('Otherwise, you will fail!')
+
+counter = 0
+while counter <= 5:
+    select = int(input('Choose minimum of three to maximum five lessons.(enter number)'))
+
+midterm = int(input('Enter your midterm score.'))
+final = int(input('Enter you final score.'))
+project = int(input('Enter your project score.'))
+
+scores = {'Midterm':midterm,'Final':final,'Project':project}
+
+avg = midterm*0.3 + final*0.5 + project*0.2
+
+lgrade = ''
+if avg > 90:
+    lgrade = 'AA'
+elif avg>70 and avg<90:
+    lgrade = 'BB'
+elif avg>50 and avg<70:
+    lgrade = 'CC'
+elif avg>30 and avg<50:
+    lgrade = 'DD'
+else:
+    lgrade = 'FF'
+
+print(f"Your letter grade is {lgrade}")
+
+if lgrade == 'FF'
+    print('You failed!')
+else:
+    print('You passed!')
